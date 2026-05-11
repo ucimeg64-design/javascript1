@@ -104,59 +104,40 @@
 
 
 
-// --------------
-let  mas=[1,2,3,4,5,6,7,8,9,10]
-let  reverse=[]
-for( let  i=mas.length-1; i>=0;i--){
-    reverse.push(mas[i])
-}
-console.log(reverse);
+// // --------------
+
+
+
+// let  mas=[1,2,3,4,5,6,7,8,9,10]
+// let  reverse=[]
+// for( let  i=mas.length-1; i>=0;i--){
+//     reverse.push(mas[i])
+// }
+// console.log(reverse);
 
 
 
 
 
-let arr = [1, 5, 2, 8, 3];
-let count = 0;
+// let arr = [1, 5, 2, 8, 3];
+// let count = 0;
 
-for (let i = 1; i < arr.length - 1; i++) {
-    if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
-        count++;
-    }
-}
-console.log(count); // 2 (5 болон 8-ыг тоолно)
-
-
-
-let arr = [1, 2, 3, 4];
-
-for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-        console.log(arr[i] + " " + arr[j]);
-    }
-}
+// for (let i = 1; i < arr.length - 1; i++) {
+//     if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+//         count++;
+//     }
+// }
+// console.log(count); // 2 (5 болон 8-ыг тоолно)
 
 
 
+// let arr = [1, 2, 3, 4];
 
-
-
-
-
-
-
-let arr = [1, 2, 3, 4, 5];
-let target = 5;
-let count = 0;
-
-for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-        if (arr[i] + arr[j] === target) {
-            count++;
-        }
-    }
-}
-console.log(count); // 2 (1+4 болон 2+3)
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         console.log(arr[i] + " " + arr[j]);
+//     }
+// }
 
 
 
@@ -164,35 +145,125 @@ console.log(count); // 2 (1+4 болон 2+3)
 
 
 
-let arr1 = [1, 2, 3, 4];
-let arr2 = [3, 4, 5, 6];
-let result = [];
-
-for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr2.length; j++) {
-        if (arr1[i] === arr2[j]) {
-            result.push(arr1[i]);
-        }
-    }
-}
-console.log(result); // [3, 4]
 
 
 
-let arr = [4, -3, 2, -1, 0, -5];
-let result = [];
+// let arr = [1, 2, 3, 4, 5];
+// let target = 5;
+// let count = 0;
 
-// Эхлээд сөрөг тоонуудыг нэмэх
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < 0) {
-        result.push(arr[i]);
-    }
-}
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] + arr[j] === target) {
+//             count++;
+//         }
+//     }
+// }
+// console.log(count); // 2 (1+4 болон 2+3)
 
-// Дараа нь эерэг тоо болон 0-ийг нэмэх
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] >= 0) {
-        result.push(arr[i]);
-    }
-}
-console.log(result); // [-3, -1, -5, 4, 2, 0]
+
+
+
+
+
+
+// let arr1 = [1, 2, 3, 4];
+// let arr2 = [3, 4, 5, 6];
+// let result = [];
+
+// for (let i = 0; i < arr1.length; i++) {
+//     for (let j = 0; j < arr2.length; j++) {
+//         if (arr1[i] === arr2[j]) {
+//             result.push(arr1[i]);
+//         }
+//     }
+// }
+// console.log(result); // [3, 4]
+
+
+
+// let arr = [4, -3, 2, -1, 0, -5];
+// let result = [];
+
+// // Эхлээд сөрөг тоонуудыг нэмэх
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//         result.push(arr[i]);
+//     }
+// }
+
+// // Дараа нь эерэг тоо болон 0-ийг нэмэх
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] >= 0) {
+//         result.push(arr[i]);
+//     }
+// }
+// console.log(result); // [-3, -1, -5, 4, 2, 0]
+
+
+
+
+
+
+// function findIndex(arr, target) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === target) {
+//             return i; // Found it!
+//         }
+//     }
+//     return -1; // Not found
+// }
+
+
+
+// function rotateRight(arr) {
+//     if (arr.length <= 1) return arr;
+    
+//     let lastElement = arr[arr.length - 1]; // Save the last item
+    
+//     // Shift elements to the right starting from the end
+//     for (let i = arr.length - 1; i > 0; i--) {
+//         arr[i] = arr[i - 1];
+//     }
+    
+//     arr[0] = lastElement; // Put the last item at the start
+//     return arr;
+// }
+
+
+
+
+
+// function isSorted(arr) {
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         if (arr[i] > arr[i + 1]) {
+//             return false; // Found a pair out of order
+//         }
+//     }
+//     return true;
+// }
+
+
+
+
+// function gradingStudents(grades) {
+//     return grades.map(grade => {
+//         // Rule: No rounding if failing (less than 38)
+//         if (grade < 38) {
+//             return grade;
+//         }
+
+//         let nextMultipleOf5 = Math.ceil(grade / 5) * 5;
+        
+//         // Rule: Round up if the difference is less than 3
+//         if (nextMultipleOf5 - grade < 3) {
+//             return nextMultipleOf5;
+//         } else {
+//             return grade;
+//         }
+//     });
+// }
+
+// Example usage:
+// 84 -> next multiple is 85. (85-84 = 1) -> Round to 85
+// 57 -> next multiple is 60. (60-57 = 3) -> Do not round
